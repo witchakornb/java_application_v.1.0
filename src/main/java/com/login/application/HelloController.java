@@ -2,22 +2,17 @@ package com.login.application;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
+import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 public class HelloController {
 
     @FXML
-    private Font x1;
+    private Button cancel;
 
-    @FXML
-    private Color x2;
-
-    @FXML
-    private Font x3;
-
-    @FXML
-    private Color x4;
+    public void cancelButtonOnAction(ActionEvent actionEvent){
+        Stage stage = (Stage) cancel.getScene().getWindow();
+        stage.close();
+    }
 
 }
